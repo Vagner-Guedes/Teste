@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação Neonews</title>
+</head>
+<body>
+
+<div class="background-image"></div>
+
+<div class="form-container">
+    <h1>Avalie o Produto</h1>
+    <p>Por favor, avalie de 1 a 5:</p>
+
+    <div class="rating-container">
+        <form id="avaliacaoForm">
+            <label for="avaliacao">Sua avaliação:</label>
+           
+            <input type="number" id="avaliacao" name="avaliacao" min="1" max="5" required>
+        </form>
+    </div>
+  
+
+    <button onclick="retornoBlock()">Fechar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
