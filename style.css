@@ -7,6 +7,35 @@ body {
     background: url('imagens/fundo.png') center center fixed;
 }
 
+
+.floating-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.cross {
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-out;
+}
+
+.floating-button:hover .cross {
+    transform: rotate(135deg);
+}
+
 .form-container {
     text-align: center;
     padding: 20px;
